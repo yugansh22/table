@@ -7,6 +7,6 @@ function printtable(number){
         table = table +  number +" X "+ i + " = " + number*i + "<br>";
         console.log(table);
     } 
-    // console.log(table);
+    
     document.getElementById("out").innerHTML = table;
 }
