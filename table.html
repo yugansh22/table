@@ -1,36 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            .btn{
-                padding: 10px;
-                width: 146px;
-                border-radius: 50%;
-            }
-        </style>
+        <title>table</title>
+        <h1>SEARCH FOR TABLES</h1>
     </head>
     <body>
-        <button class="btn" id="1" onclick="printtable(2)">TABLE 2</button><br>
-        <button class="btn"  id="2" onclick="printtable(3)">TABLE 3</button><br>
-        <button class="btn"  id="3" onclick="printtable(4)">TABLE 4</button><br>
-        <button class="btn"  id="4" onclick="printtable(5)">TABLE 5</button><br>
-        <button class="btn"  id="5" onclick="printtable(6)">TABLE 6</button><br>
-        <button class="btn"  id="6" onclick="printtable(7)">TABLE 7</button><br>
-        <button class="btn"  id="7" onclick="printtable(8)">TABLE 8</button><br>
-        <button class="btn"  id="8" onclick="printtable(9)">TABLE 9</button><br>
-        <button class="btn"  id="9" onclick="printtable(10)">TABLE 10</button><br>
-        <button class="btn"  id="10" onclick="printtable(11)">TABLE 11</button><br>
-        <button class="btn"  id="11" onclick="printtable(12)">TABLE 12</button><br>
-        <button class="btn"  id="12" onclick="printtable(13)">TABLE 13</button><br>
-        <button class="btn"  id="13" onclick="printtable(14)">TABLE 14</button><br>
-        <button class="btn"  id="14" onclick="printtable(15)">TABLE 15</button><br>
-        <button class="btn"  id="15" onclick="printtable(16)">TABLE 16</button><br>
-        <button class="btn"  id="16" onclick="printtable(17)">TABLE 17</button><br>
-        <button class="btn"  id="17" onclick="printtable(18)">TABLE 18</button><br>
-        <button class="btn"  id="18" onclick="printtable(19)">TABLE 19</button><br>
-        <button class="btn"  id="19" onclick="printtable(20)">TABLE 20</button>
-        <script src="script.js">document.get</script><br><br>
+        <form onsubmit="event.preventDefault();">
+            <label for="start">WHERE TO :</label>
+            <input type="text" id="start" name="start"><br><br>
+            <label for="end">WHERE :</label>
+            <input type="text" id="end" name="end"><br><br>
+            <input type="submit" value="SEARCH" onclick="printtable()">
+        </form>
+
+
         _________________________________________________________________________________________________________________________________________________________________________
         <div id="out"></div>
+        <script src="script.js"></script>
     </body>
 </html>
